@@ -1,0 +1,30 @@
+.show-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+    h2 { 
+        margin:20px;
+        text-align: left;
+
+    }
+}
+
+.show-image-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+    p {
+        margin-top: 0;
+        text-align: left;
+        width: 50%;
+    }
+
+}
+
+.show-details {
+ display: flex;
+ flex-direction: column;
+ float: left;
+}
