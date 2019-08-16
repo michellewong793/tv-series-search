@@ -9,7 +9,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <h1>
-            <a href="/">
+            <a href={process.env.PUBLIC_URL + '/'}>
             Search for your favorite TV series! 
             </a>
           </h1>

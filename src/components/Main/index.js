@@ -5,7 +5,7 @@ import Form from '../Form';
 
 const Main = props => (
     <Switch>
-        <Route exact path= '/' component={Form}/>
+        <Route path={process.env.PUBLIC_URL + '/'}></Route> component={Form}/>
         <Route path='/series/:id' component={SingleSeries}/>
     </Switch>
 )
