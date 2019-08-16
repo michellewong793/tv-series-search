@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Form from './components/Form'
 import './App.css';
 import Main from './components/Main';
+import {Link} from 'react-router-dom';
 
 class App extends React.Component {
   render() {
@@ -9,11 +9,11 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <h1>
-            <a href={process.env.PUBLIC_URL + '/'}>
             Search for your favorite TV series! 
-            </a>
           </h1>
-          <Main/>
+           <Link to= {process.env.PUBLIC_URL + "/"}>Home</Link>
+           <Main/>
+
         </header>
       </div>
     );
