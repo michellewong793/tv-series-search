@@ -12,7 +12,7 @@ class Form extends Component {
   
   onSeriesInputChange = (e) => {
     this.setState( { seriesName: e.target.value, isFetching: true} );
-    fetch(`http://api.tvmaze.com/search/shows?q=${e.target.value}`)
+    fetch(`https://api.tvmaze.com/search/shows?q=${e.target.value}`)
       .then(response => response.json())
       .then(json => this.setState({ series: json, isFetching: false}))
       .then(console.log(this.state.series))

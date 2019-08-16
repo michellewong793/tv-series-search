@@ -11,7 +11,7 @@ class App extends React.Component {
           <h1>
             Search for your favorite TV series! 
           </h1>
-           <Link to= {process.env.PUBLIC_URL + "/"}>Home</Link>
+           <Link to= {"/"}>Home</Link>
            <Main/>
 
         </header>
